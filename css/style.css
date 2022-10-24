@@ -20,7 +20,7 @@ body{
 
 }
 .container{
-  padding: 62.5% ;
+  padding: 10px ;
 }
 
 nav{
@@ -34,23 +34,23 @@ nav{
 nav ul li{
   display: inline-block;
   list-style: none;
-  margin: 62.50% 62.50%;
+  margin: 10px 10px;
 }
 
 nav ul li a{
   color:#00008B;
   text-decoration: none;
-  font-size: 187.5%;
+  font-size: 30px;
   position: relative;
 }
 nav ul li a::after{
   content: '';
   width: 0%;
-  height: 31.25%;
+  height: 5px;
   background: #00008B;
   position: absolute;
   left: 0;
-  bottom: -37.5%;
+  bottom: -6px;
   transition: 0.5s;
 }
 nav ul li a:hover::after{
@@ -58,8 +58,8 @@ nav ul li a:hover::after{
 }
 
 .header-text h1{
-  font-size: 625%;
-  margin-top: 62.5%;
+  font-size: 100px;
+  margin-top: 10px;
   position: absolute;
   width: 50%;
   height: 50%;
@@ -71,12 +71,12 @@ nav ul li a:hover::after{
 }
 /*---------------about--------*/
 #about{
-  padding: 500% 0%;
+  padding: 80px 0;
   color: #00008B;
   text-align: justify;
 }
 .resume{
-  font-size: 156.25%;
+  font-size: 25px;
   font-weight: 50;
   color:#000000;
   position: relative; left:5%; top:2.5%;
@@ -93,26 +93,26 @@ nav ul li a:hover::after{
 
 .sub-title{
   
-  font-size: 468.75%;
+  font-size: 75px;
   font-weight: 600;
   color: #00008B;
   position: relative; left:5%; top:-10%;
 }
 .paragraph{
-  font-size: 156.25%;
+  font-size: 25px;
   font-weight: 50;
   color:#000000;
   position: relative; left:5%; top: 10%;
 }
 .tab-titles{
   display: flex;
-  margin: 125% 0% 250%;
+  margin: 20px 0 40px;
   position: relative; left: 108%; top:-40%;
 
 }
 .tab-links{
-  margin-right: 312.5%;
-  font-size: 187.5%;
+  margin-right: 50px;
+  font-size: 30px;
   font-weight: 500;
   cursor: pointer;
   position: relative;
@@ -120,11 +120,11 @@ nav ul li a:hover::after{
 .tab-links::after{
   content: '';
   width: 0;
-  height: 31.25%;
+  height: 5px;
   background: #00008B;
   position: absolute;
   left: 0;
-  bottom: -37.5%;
+  bottom: -6px;
   transition: 0.5s;
 }
 
@@ -138,8 +138,8 @@ nav ul li a:hover::after{
 }
 .tab-contents ul li span{
   color: #000000;
-  font-size: 156.25%;
-  position: relative; top:-1187.5%;
+  font-size: 25px;
+  position: relative; top:-190px;
 }
 .tab-contents{
   display: none;
@@ -156,17 +156,17 @@ nav ul li a:hover::after{
   flex-basis: 60%;
 }
 .contact-left p{
-  margin-top: 125%;
+  margin-top: 20px;
 }
 .contact-left p i{
   color: #ff004f;
-  margin-right: 93.75%;
-  font-size: 156.25%;
+  margin-right: 15px;
+  font-size: 25px;
 }
 .btn.btn2{
   display: incline-block;
   background: #20B2AA;
-  border-radius: 37.5%;
+  border-radius: 6px;
 }
 .contact-right form{
   width: 100%
@@ -176,22 +176,22 @@ form input, form textarea{
   border: 0;
   outline: none;
   background: #fff;
-  padding: 93.75%;
-  margin: 93.75% 0%;
+  padding: 15px;
+  margin: 15px 0;
   color: #000000;
-  font-size: 112.5%;
-  border-radius: 37.5%;
+  font-size: 18px;
+  border-radius: 6px;
   position: relative; left: 5%; top:-20%;
 }
 form .btn2{
-  padding: 62.5% 500%;
-  font-size: 187.5%;
-  margin-top: 125%;
+  padding: 10px 80px;
+  font-size: 30px;
+  margin-top: 20px;
   cursor: pointer;
   position: relative; left:5%; top:-20%;
 }
 .email{
-  font-size: 156.25%;
+  font-size: 25px;
   font-weight: 50;
   color:#000000;
   position: relative; left:5%; top:-2.5%;
@@ -199,15 +199,15 @@ form .btn2{
 .copyright{
   width: 100%;
   text-align: center;
-  padding: 156.25% 0%;
+  padding: 25px 0;
   background: #fff;
   font-weight: 300;
-  margin-top: 125%;
+  margin-top: 20px;
 }
 #msg{
-  font-size: 125%;
+  font-size: 20px;
   color: #00008B;
-  margin-top: -31.25%;
+  margin-top: -5px;
   display: block;
   position: relative; left:5%; top:-19%;
 }
