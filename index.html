@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="FaviconIcon" href="favicon.ico" type="image/x-icon">
+  <link rel="shortcut" href="favicon.ico" type="image/x-icon">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Hannah Choi's Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="header">
+   <div class ="container">
+      <nav>
+        <ul id="sidemenu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="header-text">
+        <h1>Hi, I'm<br><span>Hannah Choi!</span></h1>
+    </div>
+  </div>
+</div>
+<!--------about-------->
+<div id="about">
+  <div class="container">
+    <div class="row">
+      <div class="about-col-1">
+        <h1 class="sub-title">About Me</h1>
+        <p class="resume">Resume: <a href="images/Hannah Choi Resume.pdf">Hannah Choi's Resume</a></p>
+        <p class="paragraph">I am a high school student from Fleetwood Park Secondary, which is located in Surrey, BC. I am currently enrolled
+          in the Computer Science Co-op Program, where I learn my favourite subjects! This includes Physics, Math, and Computer Science!</p>
+        <div class="tab-titles">
+          <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+          <p class="tab-links" onclick="opentab('experience')">Experience</p>
+          <p class="tab-links" onclick="opentab('projects')">Projects</p>
+          <p class="tab-links" onclick="opentab('education')">Education</p>
+        </div>
+        <div class="tab-contents active-tab" id="skills">
+          <ul>
+            <li><span><strong>Programming Languages:</strong></span></li>
+            <li><span>-Python</span></li>
+            <li><span>-Fluent using Matplotlib and NumPy</span></li>
+            <li><span>-9 months of experience</span></li>
+          </ul>
+        </div>
+        <div class="tab-contents" id="experience">
+          <ul>
+            <li><span><strong>Aug 2022 - Current</strong></span></li>
+            <li><span>-City of Surrey Volunteer</span></li>
+            <li><span><strong>Oct 2020 - Current</strong> </span></li>
+            <li><span>-Math Tutor</span></li>
+          </ul>
+        </div>
+        <div class="tab-contents" id="projects">
+          <ul>
+            <li><span><strong>Theoretical and Experimental Probability Simulation</strong></span></li>
+            <li><span>-Compare and contrast experimental/theoretical probability </span></li>
+            <li><span>-Include labeled double bar graphs</span></li>
+            <li><span><a href="https://replit.com/@hannahschoi/CS-Final-Project#main.py">Click to View Project</a></span></li>
+
+          </ul>
+        </div>
+        <div class="tab-contents" id="education">
+          <ul>
+            <li><span><strong>Sept 2019 - Current</strong></span></li>
+            <li><span>-Fleetwood Park Secondary</span></li>
+            <li><span>-Enrolled in the Computer Science Program</span></li>
+            <li><span>-4.0 GPA</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!--------contact-------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p class="email">Email: <a href="mailto:hannahchoi2006@gmail.com">hannahchoi2006@gmail.com</a></p>
+
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+      <p>Copyright © 2022 Hannah Choi</p>
+    </div>
+</div>
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbwKFUebLG6kn_YjFIny7GIgv9RNdXZK5ucP2VwQN8haz9h0O9i-NGM5BuZwEak8unhg/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById("msg")
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML = "Message sent successfully!"
+        setTimeout(function(){
+          msg.innerHTML = ""
+        },5000)
+        form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+</html>
