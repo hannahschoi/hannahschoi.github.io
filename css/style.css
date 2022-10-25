@@ -17,26 +17,21 @@ body{
   background-image: url('/images/background.png');
   background-size: cover;
   background-position: center;
-
 }
 .container{
   padding: 0.625rem;
 }
-
 nav{
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
 }
-
-
 nav ul li{
   display: inline-block;
   list-style: none;
   margin: 0.625rem 0.625rem;
 }
-
 nav ul li a{
   color:#00008B;
   text-decoration: none;
@@ -45,7 +40,7 @@ nav ul li a{
 }
 nav ul li a::after{
   content: '';
-  width: 0%;
+  width: 0;
   height: 0.313rem;
   background: #00008B;
   position: absolute;
@@ -56,9 +51,7 @@ nav ul li a::after{
 nav ul li a:hover::after{
   width: 100%;
 }
-
 .header-text h1{
-  font-size: 6.25rem;
   margin-top: 0.625rem;
   position: absolute;
   width: 50%;
@@ -79,40 +72,37 @@ nav ul li a:hover::after{
   font-size: 1.563rem;
   font-weight: 50;
   color:#000000;
-  position: relative; left:5%; top:2.5%;
+  text-align: center;
 }
 .row{
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
-
-.about-col-1{
-  flex-basis: 20%;
-}
-
 .sub-title{
-  
   font-size: 4.688rem;
   font-weight: 600;
   color: #00008B;
-  position: relative; left:5%; top:-10%;
+  text-align: center;
 }
 .paragraph{
   font-size: 1.563rem;
   font-weight: 50;
   color:#000000;
-  position: relative; left:5%; top: 10%;
+  text-align: center;
+  width: 60%;
+  margin: auto;
+  position: relative; top: 1vw; 
 }
 .tab-titles{
   display: flex;
-  margin: 1.25rem 0rem 2.5rem;
-  position: relative; left: 108%; top:-40%;
-
+  margin-left: auto;
+  margin-right: auto;
+  width: 8em;
+  position: relative; left: -15vw; top: 2vw; 
 }
 .tab-links{
   margin-right: 3.125rem;
-  font-size: 1.875rem;
   font-weight: 500;
   cursor: pointer;
   position: relative;
@@ -127,19 +117,18 @@ nav ul li a:hover::after{
   bottom: -0.375rem;
   transition: 0.5s;
 }
-
 .tab-links.active-link::after{
   width: 100%;
 }
-
 .tab-contents ul li{
   list-style: none;
-  position: relative; left: 108%; top:-100%;
+  text-align: center;
 }
 .tab-contents ul li span{
   color: #000000;
   font-size: 1.563rem;
-  position: relative; top:-11.875rem;
+  text-align: center;
+  position: relative; top: 4vw; 
 }
 .tab-contents{
   display: none;
@@ -147,32 +136,21 @@ nav ul li a:hover::after{
 .tab-contents.active-tab{
   display: block;
 }
-
 /*-------contact--------*/
-.contact-left{
-  flex-basis: 30%;
+.hannah{
+  font-size: 4.688rem;
+  font-weight: 600;
+  color: #00008B;
+  text-align: center;
 }
-.contact-right{
-  flex-basis: 60%;
-}
-.contact-left p{
-  margin-top: 1.25rem;
-}
-.contact-left p i{
-  color: #ff004f;
-  margin-right: 0.938rem;
+.email{
   font-size: 1.563rem;
-}
-.btn.btn2{
-  display: incline-block;
-  background: #20B2AA;
-  border-radius: 0.375rem;
-}
-.contact-right form{
-  width: 100%
+  font-weight: 50;
+  color: #000000;
+  text-align: center;
 }
 form input, form textarea{
-  width: 80%;
+  width: 50%;
   border: 0;
   outline: none;
   background: #fff;
@@ -181,20 +159,21 @@ form input, form textarea{
   color: #000000;
   font-size: 1.125rem;
   border-radius: 0.375rem;
-  position: relative; left: 5%; top:-20%;
 }
-form .btn2{
-  padding: 0.625rem 5rem;
-  font-size: 1.875rem;
-  margin-top: 1.25rem;
-  cursor: pointer;
-  position: relative; left:5%; top:-20%;
+.textarea{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
-.email{
+.btn.btn2{
+  display: incline-block;
+  background: #20B2AA;
+  border-radius: 0.375rem;
   font-size: 1.563rem;
-  font-weight: 50;
-  color:#000000;
-  position: relative; left:5%; top:-2.5%;
+  text-align: center;
+  cursor: pointer;
+  width: 50%;
+  height: 50%;
 }
 .copyright{
   width: 100%;
@@ -204,10 +183,22 @@ form .btn2{
   font-weight: 300;
   margin-top: 1.25rem;
 }
+div.myform{
+  display: block;
+  text-align: center;
+}
+.myform{
+  display: incline-block;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: left;
+}
 #msg{
   font-size: 1.25rem;
   color: #00008B;
-  margin-top: -0.313rem;
-  display: block;
-  position: relative; left:5%; top:-19%;
+  margin-top: 1rem;
+  display:block;
+  text-align: center;
 }
+
+
