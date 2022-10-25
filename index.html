@@ -5,7 +5,7 @@
   <link rel="shortcut" href="favicon.ico" type="image/x-icon">
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>Hannah Choi's Portfolio</title>
   <link rel="stylesheet" href="css\style.css">
 </head>
@@ -19,10 +19,10 @@
             <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
-      <div class="header-text">
-        <h1>Hi, I'm<br><span>Hannah Choi!</span></h1>
-    </div>
   </div>
+</div>
+<div class="header-text">
+  <h1 style="font-size: 7vw;">Hi, I'm<br><span>Hannah Choi!</span></h1>
 </div>
 <!--------about-------->
 <div id="about">
@@ -34,10 +34,10 @@
         <p class="paragraph">I am a high school student from Fleetwood Park Secondary, which is located in Surrey, BC. I am currently enrolled
           in the Computer Science Co-op Program, where I learn my favourite subjects! This includes Physics, Math, and Computer Science!</p>
         <div class="tab-titles">
-          <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-          <p class="tab-links" onclick="opentab('experience')">Experience</p>
-          <p class="tab-links" onclick="opentab('projects')">Projects</p>
-          <p class="tab-links" onclick="opentab('education')">Education</p>
+          <p style="font-size:2vw;" class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+          <p style="font-size:2vw;" class="tab-links" onclick="opentab('experience')">Experience</p>
+          <p style="font-size:2vw;" class="tab-links" onclick="opentab('projects')">Projects</p>
+          <p style="font-size:2vw;" class="tab-links" onclick="opentab('education')">Education</p>
         </div>
         <div class="tab-contents active-tab" id="skills">
           <ul>
@@ -61,7 +61,6 @@
             <li><span>-Compare and contrast experimental/theoretical probability </span></li>
             <li><span>-Include labeled double bar graphs</span></li>
             <li><span><a href="https://replit.com/@hannahschoi/CS-Final-Project#main.py">Click to View Project</a></span></li>
-
           </ul>
         </div>
         <div class="tab-contents" id="education">
@@ -80,28 +79,19 @@
 
 <!--------contact-------->
 <div id="contact">
-    <div class="container">
-        <div class="row">
-            <div class="contact-left">
-                <h1 class="sub-title">Contact Me</h1>
-                <p class="email">Email: <a href="mailto:hannahchoi2006@gmail.com">hannahchoi2006@gmail.com</a></p>
-
-            </div>
-            <div class="contact-right">
-                <form name="submit-to-google-sheet">
-                    <input type="text" name="Name" placeholder="Your Name" required>
-                    <input type="email" name="Email" placeholder="Your Email" required>
-                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                    <button type="submit" class="btn btn2">Submit</button>
-                </form>
-                <span id="msg"></span>
-            </div>
-        </div>
-    </div>
-    <div class="copyright">
-      <p>Copyright © 2022 Hannah Choi</p>
-    </div>
+  <p class="hannah">Contact Me</p>
+  <p class="email">Email:<a href="mailto:hannahchoi2006@gmail.com">hannahchoi2006@gmail.com</a></p>
+  <div class="myform">
+    <form name="submit-to-google-sheet">
+      <input type="text" name="Name" placeholder="Your Name" required>
+      <input type="email" name="Email" placeholder="Your Email" required>
+      <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+      <button type="Submit" class="btn btn2">Submit</button>
+    </form>
+    <span id="msg"></span>
+  </div>
 </div>
+<p class="copyright">Copyright © 2022 Hannah Choi</p>
 
 
 <script>
@@ -139,3 +129,4 @@
   })
 </script>
 </html>
+
